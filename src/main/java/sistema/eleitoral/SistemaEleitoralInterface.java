@@ -1,5 +1,8 @@
-package sistemaEleitoral;
-public interface SistemaEleitoralInterface {
+package sistema.eleitoral;
+
+import java.io.Serializable;
+
+public interface SistemaEleitoralInterface extends Serializable {
 
     public void votar(String numTitulo, int numeroVotado) throws TituloInexistenteException;
     public Candidato obterDadosDoCandidato(String nome) throws CandidatoInexistenteException;

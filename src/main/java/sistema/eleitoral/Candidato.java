@@ -1,6 +1,9 @@
-package sistemaEleitoral;
+package sistema.eleitoral;
 
-public class Candidato {
+
+import java.io.Serializable;
+
+public class Candidato implements Serializable {
     private String nome;
     private int numero;
     private Partido partido;
@@ -33,5 +36,13 @@ public class Candidato {
 
     public void setPartido(Partido partido) {
         this.partido = partido;
+    }
+
+    @Override
+    public String toString() {
+        return  "O candidato de nome: " + this.nome + "\n" +
+                "tem o numero: " + numero +"\n"+
+                "e é do partido: "+partido;
+
     }
 }

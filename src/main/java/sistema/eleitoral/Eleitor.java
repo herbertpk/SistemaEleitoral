@@ -1,7 +1,9 @@
-package sistemaEleitoral;
+package sistema.eleitoral;
+
+import java.io.Serializable;
 import java.util.Objects;
 
-public class Eleitor {
+public class Eleitor implements Serializable {
     String nome;
     String titulo;
 

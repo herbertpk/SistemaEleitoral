@@ -1,6 +1,8 @@
-package sistemaEleitoral;
+package sistema.eleitoral;
 
-public class Voto {
+import java.io.Serializable;
+
+public class Voto implements Serializable {
     int numeroVotado;
 
     public Voto(int numeroVotado) {

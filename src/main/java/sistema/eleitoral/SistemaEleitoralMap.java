@@ -1,4 +1,5 @@
-package sistemaEleitoral;
+package sistema.eleitoral;
+
 import java.util.*;
 
 

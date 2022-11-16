@@ -1,11 +1,11 @@
-import sistemaEleitoral.*;
+import sistema.eleitoral.*;
+
 import org.junit.*;
-import org.junit.Assert;
 
 import static org.junit.Assert.*;
 
 
-public class SistemaEleitoralTest {
+public class SistemaEleitoralTest  {
     @BeforeClass
     public static void setUp(){
 
@@ -16,7 +16,7 @@ public class SistemaEleitoralTest {
     public void testCadastro(){
         SistemaEleitoralInterface testCad = new SistemaEleitoralMap();
         assertTrue(testCad.cadastraEleitor("herbert","123"));
-        assertTrue(testCad.cadastraCandidato("devertu",123,Partido.PARTIDO1));
+        assertTrue(testCad.cadastraCandidato("devertu",123, Partido.PARTIDO1));
         assertFalse(testCad.cadastraEleitor("herbert","123"));
         assertFalse(testCad.cadastraCandidato("devertu",123,Partido.PARTIDO1));
     }

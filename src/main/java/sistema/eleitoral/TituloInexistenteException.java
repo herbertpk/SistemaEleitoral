@@ -1,4 +1,4 @@
-package sistemaEleitoral;
+package sistema.eleitoral;
 
 public class TituloInexistenteException extends Exception{
     public TituloInexistenteException (String menssage){
